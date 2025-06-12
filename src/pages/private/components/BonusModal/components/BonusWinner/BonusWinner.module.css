@@ -1,0 +1,142 @@
+.container {
+  position: fixed;
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, #646cff80 0%, #f5189e 70%);
+  z-index: 0;
+}
+
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/path-to-your-confetti.gif");
+  background-size: cover;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.tierLabel {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  backdrop-filter: blur(2px);
+}
+
+.tierLabel-gold {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.prizeReveal {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: gold;
+  animation: bounceIn 1s ease;
+}
+
+.prize {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.darkText {
+  color: #111 !important;
+  background: none;
+  -webkit-text-fill-color: unset;
+}
+
+.tapMessage {
+  font-size: 1rem;
+  color: #eee;
+  margin-top: 1.5rem;
+  opacity: 0.8;
+}
+
+/* Animaciones */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Estilos por tier */
+.tier-min {
+  background: linear-gradient(135deg, #888, #aaa);
+}
+
+.tier-majo {
+  background: linear-gradient(135deg, #5c9ded, #7ac4ff);
+}
+
+.tier-maxi {
+  background: linear-gradient(135deg, #ff8c00, #ffc107);
+}
+
+.tier-mega {
+  background: linear-gradient(135deg, #d500f9, #ff4081);
+}
+
+.tier-gold {
+  background: linear-gradient(135deg, #ffd700, #ffea00);
+}

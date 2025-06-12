@@ -1,0 +1,122 @@
+@import '../../../variables.css';
+
+.container {
+  padding: 1.5rem 1rem;
+  background-color: var(--background-color);
+  min-height: 100vh;
+  color: var(--text-white);
+  box-sizing: border-box;
+  width: 100vw; /* Añadido */
+  max-width: 500px; /* Añadido */
+  margin: 0 auto; /* Centrado horizontal */
+  min-height: 100vh;
+}
+
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--title-pink);
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.card {
+  background-color: var(--color-gris);
+  border-radius: 1rem;
+  padding: 1.4rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease;
+  animation: fadeInUp 0.3s ease forwards;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: flex-start;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin: 5px 4px 0;
+  flex: 1;
+}
+
+.status {
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.35rem 0.8rem;
+  border-radius: 20px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.active {
+  background-color: var(--icon-green);
+  color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.inactive {
+  background-color: var(--color-gris);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.upcoming {
+  background-color: var(--color-orange);
+  color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.dates p {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}

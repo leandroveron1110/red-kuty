@@ -1,0 +1,86 @@
+:root {
+  --background-color: #141018;
+  --title-pink: #f5189e;
+  --text-white: #eff5e9;
+  --icon-green: #00ff99;
+  --icon-blue: #1873f5;
+  --color-gris: #222122;
+  --color-orange: #f5ac18;
+}
+
+.bonusContainer {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  background-color: var(--color-gris);
+  border-radius: 1.5rem;
+  color: var(--text-white);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--title-pink);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--text-white);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.bonusList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.bonusList div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--text-white);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.bonusList div svg {
+  font-size: 1.4rem;
+  color: var(--icon-blue);
+  margin-right: 0.5rem;
+}
+
+.bonusList div:last-child svg {
+  color: var(--icon-green);
+}
+
+.bonusList div span:first-of-type {
+  flex: 1;
+  margin-left: 0.5rem;
+  text-align: left;
+}
+
+.percent {
+  color: var(--icon-green);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  line-height: 1.4;
+}

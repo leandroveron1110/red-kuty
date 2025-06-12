@@ -1,0 +1,69 @@
+.referralSection {
+  background: linear-gradient(135deg, var(--title-pink), #6b2675);
+  padding: 2.5rem 1.5rem;
+  border-radius: 1.5rem;
+  margin: 3rem 0;
+  box-shadow: 0 0 20px rgba(245, 24, 158, 0.25);
+  color: var(--text-white);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.referralSection:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 35px rgba(245, 24, 158, 0.4);
+}
+
+.referralContent {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: stretch;
+}
+
+.referralIcon {
+  font-size: 3.5rem;
+  color: var(--highlight);
+  flex-shrink: 0;
+}
+
+.textBlock {
+  max-width: 600px;
+}
+
+.referralSection h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-white);
+}
+
+.referralSection p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--text-white);
+}
+
+.highlight {
+  color: var(--icon-green);
+  font-weight: 700;
+}
+
+.referralButton {
+  background-color: var(--highlight);
+  color: #000;
+  font-weight: 700;
+  padding: 0.9rem 1.5rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+}
+
+.referralButton:hover {
+  transform: scale(1.05);
+  color: #000;
+}

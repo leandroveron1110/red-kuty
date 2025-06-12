@@ -1,0 +1,84 @@
+.instructions {
+  position: relative;
+  background-color: var(--color-gris);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  color: var(--text-white);
+  text-align: left;
+  max-width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.instructions h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+  color: var(--title-pink);
+}
+
+.instructions ol {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.instructions li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.tip {
+  display: flex;
+  margin-top: 1rem;
+  font-style: italic;
+  color: var(--icon-green);
+  font-size: 0.9rem;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Botón de cierre */
+.closeButton {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: var(--text-white);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 4px;
+}
+.containerPlayButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.playButton {
+  width: 100%;
+  background-color: var(--title-pink);
+}
+
+/* Estilos específicos para móviles hasta 440px */
+@media (max-width: 440px) {
+  .instructions {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .instructions h3 {
+    font-size: 1.1rem;
+  }
+
+  .instructions li {
+    font-size: 0.9rem;
+  }
+
+  .tip {
+    font-size: 0.85rem;
+  }
+
+  .closeButton {
+    font-size: 1rem;
+  }
+}

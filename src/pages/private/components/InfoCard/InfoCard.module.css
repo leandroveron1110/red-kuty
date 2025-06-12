@@ -1,0 +1,78 @@
+@import "../../../../variables.css";
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #2a2a2a;
+  padding: 15px 20px;
+  border-radius: 10px;
+  /* border-left: 4px solid var(--icon-blue); */
+  transition: background 0.3s ease, transform 0.2s ease;
+  text-align: left;
+  justify-content: space-evenly;
+  flex-direction: row;
+  /* border-right: 4px solid var(--icon-blue); */
+}
+
+.item:hover {
+  background-color: #333;
+}
+
+.icon {
+  color: var(--icon-green);
+  font-size: 28px;
+  min-width: 28px;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-white);
+  margin-bottom: 4px;
+}
+
+.value {
+  font-size: 0.95rem;
+  color: var(--text-white);
+  opacity: 0.9;
+}
+
+.infoButton {
+  width: 100%;
+  margin-top: 25px;
+  background-color: var(--title-pink);
+  height: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estado clickeable */
+.clickable {
+  cursor: pointer;
+  background-color: var(--color-gris);
+  border-left-color: var(--title-pink);
+}
+
+.clickable:hover {
+  background-color: #3a3a3a;
+  transform: scale(1.01);
+}
+
+.clickable .icon {
+  color: var(--title-pink);
+}
+
+.clickable .label {
+  color: var(--title-pink);
+}

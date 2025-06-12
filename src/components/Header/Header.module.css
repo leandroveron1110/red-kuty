@@ -1,0 +1,56 @@
+:root {
+  --color-neon: #F51B9E;
+  --color-background: #0d0d0d;
+  --color-card-bg: #1a1a1a;
+  --color-text: #ffffff;
+  --color-active: #00ff99;
+}
+
+.header {
+  background-color: var(--color-card-bg);
+  padding: 0.5rem 1rem;
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.navItem svg {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.navItem:hover {
+  color: var(--color-neon);
+}
+
+.active {
+  color: var(--color-active);
+  text-shadow: 0 0 5px var(--color-active);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navItem span {
+    font-size: 0.75rem;
+  }
+
+  .navItem svg {
+    font-size: 1.2rem;
+  }
+}

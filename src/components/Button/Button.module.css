@@ -1,0 +1,19 @@
+.infoButton {
+  width: 100%;
+  background-color: var(--title-pink); /* por defecto */
+  height: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.infoButton:hover {
+  opacity: 0.9;
+}

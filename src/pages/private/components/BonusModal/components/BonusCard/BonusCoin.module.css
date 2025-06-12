@@ -1,0 +1,93 @@
+.flipCardWrapper {
+  perspective: 800px;
+  cursor: pointer;
+  /* width: 90px;
+  height: 90px; */
+}
+
+.flipCardInner {
+  width: 80px;
+  /* height: 90px; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.flipCardInner.revealed {
+  animation: flipRevealSim 0.5s ease forwards;
+}
+
+@keyframes flipRevealSim {
+  0% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  49% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.flipCardFace {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+  background: #000;
+}
+
+/* Imagen */
+.coinImage {
+  width: 100%;
+  /* height: 90px; */
+  object-fit: cover;
+  border-radius: 50%;
+  transition: box-shadow 0.3s;
+}
+
+/* Valor */
+.coinValue {
+  position: absolute;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #fff;
+  /* text-shadow: 1px 1px 3px rgb(255 0 0 / 6%); */
+  background-color: #181818a1;
+  border-radius: 2px;
+  padding: 3px 5px;
+}
+
+
+@media (max-width: 600px) {
+  .flipCardWrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .flipCardInner {
+    width: 60px;
+    height: 60px;
+  }
+
+  .coinImage {
+    width: 60px;
+    height: 60px;
+  }
+
+  .coinValue {
+    font-size: 0.6rem;
+  }
+}

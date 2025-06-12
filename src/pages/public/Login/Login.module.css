@@ -1,0 +1,112 @@
+@import '../../../variables.css';
+
+.container {
+  display: inline-block;
+  width: 100vw;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.containerForm {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 25px 20px;
+  border-radius: 3px;
+  background-color: var(--background-color);
+  color: var(--text-white);
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--title-pink);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.formGroup {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.input {
+  padding: 8px 16px;
+  border: 1px solid var(--color-gris);
+  border-radius: 10px;
+  background-color: var(--color-gris);
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: var(--icon-green);
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  font-weight: 400;
+  padding: 10px 24px;
+  margin-top: 16px;
+}
+
+.buttonCancel {
+  background-color: var(--color-grey);
+  color: #fff;
+  border: none;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+/* NUEVOS ESTILOS */
+.backButton {
+  background: none;
+  border: none;
+  color: var(--text-white);
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.backIcon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Medias para tamaños menores */
+@media (max-width: 430px) {
+  .containerForm {
+    padding: 25px 15px;
+  }
+}
+
+@media (max-width: 340px) {
+  .containerForm {
+    padding: 25px 10px;
+  }
+}

@@ -1,0 +1,99 @@
+@import "../../../../../../variables.css";
+
+.tierTitle {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 800;
+  color: var(--title-pink);
+}
+
+.tierList {
+  display: flex;
+  /* gap: 1rem; */
+  justify-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #222122;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+.tierCard {
+  /* background: linear-gradient(145deg, #2e2a38, #1c1923); */
+  padding: 0.3rem;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  min-width: 85px;
+  max-width: 110px;
+}
+
+.cardHeader {
+  margin-bottom: -9px;
+  display: flex;
+  justify-content: center;
+}
+
+.tierLabel {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.labelList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.labelItem {
+  font-size: 0.5rem;
+  /* background-color: rgba(255, 255, 255, 0.05); */
+  /* padding: 0.3rem 0.5rem; */
+  /* border-radius: 6px; */
+  color: #fff;
+}
+
+/* Colores personalizados para cada tier */
+/* .tier-min {
+  border-color: var(--icon-blue);
+}
+.tier-majo {
+  border-color: var(--icon-green);
+}
+.tier-maxi {
+  border-color: var(--color-orange);
+}
+.tier-mega {
+  border-color: #ff69b4;
+}
+.tier-gold {
+  border-color: gold;
+} */
+
+.winnerItem {
+  font-weight: bold;
+  color: gold;
+  background: rgba(255, 215, 0, 0.1);
+  border-left: 4px solid gold;
+  padding-left: 0.5rem;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
